@@ -1,0 +1,119 @@
+/* you can add to or change this. */
+
+body {
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+  font-family: 'Times New Roman';
+  background-color: lightsteelblue;
+  font-size: xx-large;
+}
+
+#home {
+  font-family: trajan;
+  font-size: 50px;
+  padding-top: 100px;
+  padding-bottom: 400px;
+}
+
+#home p{
+  font-size: 40px;
+}
+
+#game {
+  display: grid;
+  align-content: center;
+  width: 445px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: navy;
+  border-radius: 25px;
+}
+
+.card:hover {
+  box-shadow: inset 0px 0px 0px 3px whitesmoke;
+  box-sizing: border-box;
+}
+
+select {
+  font-size: 26px;
+  font-family: 'Times New Roman';
+  background-color: lightyellow;
+}
+
+#start {
+  background-color: palevioletred;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  display: inline-block;
+  font-size: 32px;
+}
+
+#reset {
+  background-color: palevioletred;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.indigo {
+  background-color: indigo;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.off {
+  background-color: navy;
+}

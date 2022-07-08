@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Memory Game!</title>
+  <link rel="stylesheet" href="memory-game.css"/>
+</head>
+<body>
+
+<div id="home">
+  <h1 id="heading1">Memory Game</h1>
+
+  <p>Match all cards of the same color to win!</p>
+  <br>
+
+  <a href="#game">
+    <button id="start">Start Game!</button>
+  </a>
+</div>
+
+<label>Choose number of rows:</label>
+<select id="rows">
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4" selected="selected">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+</select>
+<br><br>
+
+<a href="#game">
+  <button id="reset">Reset Game</button>
+</a>
+<p id="score">Score: 0</p>
+<hr>
+
+<div id="game"></div>
+
+<script src="memory-game.js"></script>
+
+</body>
+</html>
