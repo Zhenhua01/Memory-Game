@@ -5,14 +5,13 @@
 // initialize data;
 let count = 0;
 let COLORS = [];
-let bestScore = 0;
 const WAIT_MSECS = 1000;
 
 let colorData = [
   "red", "orange", "yellow", "green", "blue", "indigo",
   "purple", "pink", "gray", "black", "white", "brown",
 ];
-colorData = shuffle(colorData); // shuffle database of colors
+colorData = shuffle(colorData); // initial shuffle database of colors
 
 // start game when button is clicked
 function startGame(){
@@ -108,6 +107,7 @@ function handleCardClick(event) {
       ignoreClick = true;
       setTimeout(unFlipCard, WAIT_MSECS, firstCard, card);
       firstCard = false;
+
     } else {
       firstCard = false;
       if (checkForWin()) {
@@ -149,6 +149,21 @@ function countScore(){
     `;
   scoreBoard.innerHTML = score;
 }
+
+// make title transistion colors for fun
+function randomRGB() {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+const heading = document.querySelectorAll(".heading");
+setInterval (function () {
+  for (let word of heading){
+    word.style.color = randomRGB();
+  }
+}, 1000);
 
 document.getElementById("start").addEventListener("click", startGame);
 document.getElementById("reset").addEventListener("click", startGame);

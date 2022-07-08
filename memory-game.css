@@ -13,11 +13,15 @@ body {
   font-family: trajan;
   font-size: 50px;
   padding-top: 100px;
-  padding-bottom: 400px;
+  padding-bottom: 800px;
 }
 
 #home p{
   font-size: 40px;
+}
+
+.heading {
+  transition: color 1000ms;
 }
 
 #game {
@@ -35,7 +39,7 @@ body {
   width: 100px;
   height: 100px;
   background-color: navy;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .card:hover {
